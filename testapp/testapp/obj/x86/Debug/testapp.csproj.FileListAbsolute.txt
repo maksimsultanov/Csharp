@@ -1,0 +1,6 @@
+/home/maksim/Projects/testapp/testapp/bin/Debug/testapp.exe
+/home/maksim/Projects/testapp/testapp/bin/Debug/testapp.pdb
+/home/maksim/Projects/testapp/testapp/obj/x86/Debug/testapp.csprojAssemblyReference.cache
+/home/maksim/Projects/testapp/testapp/obj/x86/Debug/testapp.csproj.CoreCompileInputs.cache
+/home/maksim/Projects/testapp/testapp/obj/x86/Debug/testapp.exe
+/home/maksim/Projects/testapp/testapp/obj/x86/Debug/testapp.pdb

@@ -1,0 +1,9 @@
+/home/maksim/Projects/em1/em1/obj/x86/Debug/em1.csprojAssemblyReference.cache
+/home/maksim/Projects/em1/em1/obj/x86/Debug/em1.csproj.CoreCompileInputs.cache
+/home/maksim/Projects/em1/em1/bin/Debug/em1.exe
+/home/maksim/Projects/em1/em1/bin/Debug/em1.pdb
+/home/maksim/Projects/em1/em1/bin/Debug/Vlc.DotNet.Core.dll
+/home/maksim/Projects/em1/em1/bin/Debug/Vlc.DotNet.Core.Interops.dll
+/home/maksim/Projects/em1/em1/obj/x86/Debug/em1.csproj.CopyComplete
+/home/maksim/Projects/em1/em1/obj/x86/Debug/em1.exe
+/home/maksim/Projects/em1/em1/obj/x86/Debug/em1.pdb

@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{D0906179-568D-4062-A5D1-AC6F957122F4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Выходные данные сборки 4:51 ПП 2020-05-16.binlog">
+    <Files>
+      <File FileName="WinForm/Form1.cs" Line="7" Column="28" />
+      <File FileName="Выходные данные сборки 4:51 ПП 2020-05-16.binlog" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WinForm" expanded="True">
+            <Node name="WinForm" expanded="True">
+              <Node name="References" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WinForm PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

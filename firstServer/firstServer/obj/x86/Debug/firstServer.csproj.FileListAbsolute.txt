@@ -1,0 +1,6 @@
+/home/maksim/Projects/firstServer/firstServer/bin/Debug/firstServer.exe
+/home/maksim/Projects/firstServer/firstServer/bin/Debug/firstServer.pdb
+/home/maksim/Projects/firstServer/firstServer/obj/x86/Debug/firstServer.csprojAssemblyReference.cache
+/home/maksim/Projects/firstServer/firstServer/obj/x86/Debug/firstServer.csproj.CoreCompileInputs.cache
+/home/maksim/Projects/firstServer/firstServer/obj/x86/Debug/firstServer.exe
+/home/maksim/Projects/firstServer/firstServer/obj/x86/Debug/firstServer.pdb

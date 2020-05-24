@@ -1,0 +1,6 @@
+/home/maksim/Projects/firstClient/firstClient/bin/Debug/firstClient.exe
+/home/maksim/Projects/firstClient/firstClient/bin/Debug/firstClient.pdb
+/home/maksim/Projects/firstClient/firstClient/obj/x86/Debug/firstClient.csprojAssemblyReference.cache
+/home/maksim/Projects/firstClient/firstClient/obj/x86/Debug/firstClient.csproj.CoreCompileInputs.cache
+/home/maksim/Projects/firstClient/firstClient/obj/x86/Debug/firstClient.exe
+/home/maksim/Projects/firstClient/firstClient/obj/x86/Debug/firstClient.pdb

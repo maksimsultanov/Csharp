@@ -1,0 +1,6 @@
+/home/maksim/Projects/FirstMonoConsole/FirstMonoConsole/bin/Debug/FirstMonoConsole.exe
+/home/maksim/Projects/FirstMonoConsole/FirstMonoConsole/bin/Debug/FirstMonoConsole.pdb
+/home/maksim/Projects/FirstMonoConsole/FirstMonoConsole/obj/x86/Debug/FirstMonoConsole.csprojAssemblyReference.cache
+/home/maksim/Projects/FirstMonoConsole/FirstMonoConsole/obj/x86/Debug/FirstMonoConsole.csproj.CoreCompileInputs.cache
+/home/maksim/Projects/FirstMonoConsole/FirstMonoConsole/obj/x86/Debug/FirstMonoConsole.exe
+/home/maksim/Projects/FirstMonoConsole/FirstMonoConsole/obj/x86/Debug/FirstMonoConsole.pdb

@@ -1,0 +1,2 @@
+/home/maksim/Projects/WinForm/WinForm/obj/x86/Debug/WinForm.csprojAssemblyReference.cache
+/home/maksim/Projects/WinForm/WinForm/obj/x86/Debug/WinForm.csproj.CoreCompileInputs.cache

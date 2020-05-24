@@ -1,0 +1,2 @@
+/home/maksim/Projects/videoplayer/videoplayer/obj/x86/Debug/videoplayer.csprojAssemblyReference.cache
+/home/maksim/Projects/videoplayer/videoplayer/obj/x86/Debug/videoplayer.csproj.CoreCompileInputs.cache

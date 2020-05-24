@@ -1,0 +1,6 @@
+/home/maksim/Projects/FirstGTK/FirstGTK/obj/x86/Debug/FirstGTK.csprojAssemblyReference.cache
+/home/maksim/Projects/FirstGTK/FirstGTK/obj/x86/Debug/FirstGTK.csproj.CoreCompileInputs.cache
+/home/maksim/Projects/FirstGTK/FirstGTK/bin/Debug/FirstGTK.exe
+/home/maksim/Projects/FirstGTK/FirstGTK/bin/Debug/FirstGTK.pdb
+/home/maksim/Projects/FirstGTK/FirstGTK/obj/x86/Debug/FirstGTK.exe
+/home/maksim/Projects/FirstGTK/FirstGTK/obj/x86/Debug/FirstGTK.pdb
