@@ -16,7 +16,19 @@ namespace console3
             //get response
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             // create strem
-            using (Stream stream = response.GetResponseStream())
+            byte[] buf = new byte[1024 * 1024];
+            Stream stream = response.GetResponseStream();
+            BinaryReader reader = new BinaryReader(stream);
+            int count = 0;
+            count = reader.BaseStream.Read(buf, 0, buf.Length);
+            while (count>0)
+            {
+                Console.WriteLine(buf);
+                //Console.ReadLine();
+                count = reader.BaseStream.Read(buf, 0, buf.Length);
+            }
+
+            /*using (Stream stream = response.GetResponseStream())
             {
                 StreamReader binaryReader = new StreamReader(stream);
                 byte[] buffer = new byte[1024 * 1024];
@@ -81,15 +93,16 @@ namespace console3
                     Console.WriteLine(s);
 
                     Console.WriteLine(s.Length);
-                    Console.ReadLine();*/
+                    Console.ReadLine();
                 }
 
-            }
+            }*/
             //close the response
+            stream.Close();
             response.Close();
 
         }
-        static int search(byte[] haystack, byte[] needle)
+        /*static int search(byte[] haystack, byte[] needle)
         {
             for (int i = 0; i <= haystack.Length - needle.Length; i++)
             {
@@ -118,6 +131,6 @@ namespace console3
                 }
                 return true;
             }
-        }
+        }*/
     }
 }

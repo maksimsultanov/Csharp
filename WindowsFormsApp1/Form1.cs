@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Net;
@@ -64,44 +65,79 @@ namespace WindowsFormsApp1
              // create strem
              using (Stream stream = response.GetResponseStream())
              {
-                 StreamReader binaryReader = new StreamReader(stream);
-                 string s = "";
-                 ArrayList arrayList = new ArrayList();
-                 while ((s = binaryReader.ReadLine()) != null)
+                 BinaryReader binaryReader = new BinaryReader(stream);
+                byte buf1 = new byte();
+                byte buf2 = new byte();
+                bool startF = false;
+                bool stopF = false;
+                List<byte> arrayList = new List<byte>();
+                buf1 = binaryReader.ReadByte();
+                 while (buf1 != null)
                  {
-                     if (s.Contains("Content-Length"))
-                     {
-                         var sTmp = s.Split(' ');
-                         binaryReader.ReadLine();
-                         Console.WriteLine(sTmp[1]);
-                         while (s.Contains("--myboundary") == false)
-                         {
-                             s = binaryReader.ReadLine();
-                             string s1 = "";
 
-                             if (s.EndsWith("--myboundary"))
-                             {
-                                 s1 = s.Replace("--myboundary", "");
-                                 arrayList.AddRange(System.Text.Encoding.UTF8.GetBytes(s1));
-                             }
-                             else
-                             {
-                                 arrayList.AddRange(System.Text.Encoding.UTF8.GetBytes(s));
-                             }
-                         }
-                        byte[] buffer = new byte[arrayList.Count];
-                        arrayList.CopyTo(buffer);
+                    if (startF)
+                    {
+                        if (buf1 == 0xff)
+                        {
+                            buf2 = (byte)binaryReader.ReadByte();
+                            if (buf2 == 0xd9)
+                            {
+                                arrayList.Add(buf1);
+                                arrayList.Add(buf2);
+                                stopF = true;
+                            }
+                        }
+                        else
+                        {
+                            arrayList.Add(buf1);
+                        }
+
+
+                    }
+                    else
+                    {
+                        if (buf1 == 0xff)
+                        {
+                            buf2 = (byte)binaryReader.ReadByte();
+                            if (buf2 == 0xd8)
+                            {
+                                arrayList.Add(buf1);
+                                arrayList.Add(buf2);
+                                startF = true;
+                            }
+                        }
+                    }
+                    if (startF && stopF)
+                    {
+                        startF = false;
+                        stopF = false;
+                        /*
+                         * write out image                      
+                        */
+                        byte[] imgBytes = arrayList.ToArray();
+                        System.IO.File.WriteAllBytes("/home/maksim/Projects/WindowsFormsApp1/newframe.jpeg", imgBytes);
+                        //Bitmap bitmap;
+                        using (MemoryStream ms = new MemoryStream(imgBytes))
+                        {
+                            Image bitimg = Image.FromStream(ms);
+                            pictureBox1.Image = new Bitmap(bitimg);
+                        }
                         arrayList.Clear();
-                        MemoryStream mStream = new MemoryStream();
-                        mStream.Write(buffer, 0, Convert.ToInt32(buffer.Length));
-                        Bitmap bm = new Bitmap(mStream, false);
-                        mStream.Dispose();
-                        pictureBox1.Image = null;
-                        pictureBox1.Image = bm;
-                        stream.Flush();
+                        buf2 = 0x00;
+                        buf1 = binaryReader.ReadByte();
+                    }
+                    if (buf2 == 0xff)
+                    {
+                        if (startF) arrayList.Add(buf1);
+                        buf1 = buf2;
+                        buf2 = 0x00;
+                    }
+                    else
+                    {
+                        buf1 = binaryReader.ReadByte();
                     }
                 }
-
+                
              }
              //close the response
              response.Close();
